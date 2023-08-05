@@ -1,9 +1,12 @@
 [package]
-name = "osintcore"
+name = "titanosint"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ratatui = { version = "0.22.0", features = ["all-widgets"] }
 rustyline = "11.0.0"
+crossterm = "0.26.1"
+tui = { package = "ratatui", version = "0.21.0" }
